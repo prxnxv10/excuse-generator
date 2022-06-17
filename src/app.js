@@ -4,7 +4,6 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
-import { ContextReplacementPlugin } from "webpack";
 
 window.onload = function() {
   function generateExcuse() {
@@ -16,13 +15,13 @@ window.onload = function() {
       "right on time",
       "when I finished",
       "during my lunch",
-      "while I was praying"
+      "while I was praying",
     ];
 
     let whoRandom = who[Math.floor(Math.random() * who.length)];
     let actionRandom = action[Math.floor(Math.random() * action.length)];
     let whatRandom = what[Math.floor(Math.random() * what.length)];
-    let whenRandom = when[Math.floor(Math.random() * what.length)];
+    let whenRandom = when[Math.floor(Math.random() * when.length)];
 
     return whoRandom + actionRandom + whatRandom + whenRandom;
   }
